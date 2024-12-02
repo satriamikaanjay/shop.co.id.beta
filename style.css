@@ -1,0 +1,519 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+.header span {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.header a {
+    color: white;
+}
+
+.p-close {
+    margin-bottom: 0;
+}
+
+/* Navbar */
+/* Navbar Styling */
+/* Navbar Styling */
+.navbar {
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; /* Menghilangkan padding */
+    margin-top: 0; /* Menghilangkan jarak di atas navbar */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin: 0; /* Menghilangkan margin */
+    padding-left: 10px; /* Menambahkan sedikit padding kiri untuk spasi */
+    margin-left: 100px;
+    font-weight: 800;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    padding: 0; /* Menghilangkan padding di navbar-links */
+    transform: translateX(-1%);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 500px;
+    transform: translateX(-10%);
+    border-radius: 800px;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px;
+    color: black;
+    margin-top: 0px;
+}
+
+.dropdown-btn:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown when hovering over the button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.hero-content {
+    display: flex;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 30px;
+    margin-left: 50px;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.shop-now-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.stats-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stats div {
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 5px;
+}
+
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+/* Brands Section */
+.brands {
+    background-color: black;
+    padding: 30px 0;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.brand-logos img {
+    width: 150px;
+    height: auto;
+    max-height: 80px;
+}
+
+/* New Arrivals Section */
+.new-arrivals {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.span-find {
+    font-weight: 900; 
+    font-size: 50px; 
+    color: black;
+    line-height: 40px;
+}
+
+.desk {
+    color: #666666;
+}
+
+.view-all-btn {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 12px 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: 13px;
+    text-decoration: none;
+    border: 1px solid black; /* Menambahkan border hitam */
+    font-weight: 900;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.separator {
+    border: none; /* Menghilangkan border default */
+    border-top: 1px solid black; /* Membuat garis tipis */
+    width: 80%; /* Menentukan lebar garis, misalnya 50% dari lebar elemen induk */
+    margin: 100px auto; /* Menambahkan ruang di atas dan bawah, dan mengatur garis di tengah */
+}
+
+.dress-style-container {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Grid responsif */
+    gap: 20px; /* Jarak antar gambar */
+    justify-items: center;
+}
+
+.image-item {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    transform: scale(1.05); /* Efek hover untuk memperbesar */
+}
+
+.image {
+    width: 100%;
+    height: 200px; /* Tinggi gambar tetap */
+    object-fit: cover; /* Memastikan gambar tetap terpotong dengan proporsional */
+    border-radius: 10px;
+}
+
+.image-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.reviews-section {
+    padding: 20px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.reviews-title {
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    margin-right: 20px; /* Memberikan jarak antara judul dan tombol */
+}
+
+.arrow-btn {
+    background-color: transparent;
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.arrow-btn svg {
+    width: 10px;  /* Ukuran ikon lebih besar */
+    height: 10px; /* Ukuran ikon lebih besar */
+    fill: rgb(0, 0, 0);  /* Warna ikon */
+}
+
+.left-btn {
+    left: 90%; /* Menempatkan tombol kiri di sebelah kanan judul */
+    margin-left: 0px; /* Memberikan jarak antara tombol kiri dan judul */
+}
+
+.right-btn {
+    left: calc(90% + 50px); /* Menempatkan tombol kanan lebih jauh dari tombol kiri */
+    margin-left: 0px;
+}
+
+.reviews-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.reviews {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.review {
+    min-width: 300px; /* Lebar setiap review */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stars {
+    color: gold;
+}
+
+.verified {
+    color: green;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.newsletter {
+    background-color: #111;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.newsletter h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.newsletter-input {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.newsletter-input input[type="email"] {
+    padding: 0.8em;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    outline: none;
+}
+
+.newsletter-input button {
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.footer-col {
+    max-width: 200px;
+}
+
+.footer-col h3, .footer-col h4 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.footer-col p {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 0.5em 0;
+}
+
+.footer-col ul li a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+}
